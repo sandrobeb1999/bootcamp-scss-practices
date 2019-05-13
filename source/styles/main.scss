@@ -4,7 +4,7 @@ $color-3: #a1b1bc;
 $color-4: #cfd2d3;
 $color-5: #a47503;
 $color-6: #f9b718;
-$color-7: #f9b718;
+$color-7: #ffc12d;
 
 * {
   box-sizing: border-box;
@@ -19,17 +19,53 @@ $color-7: #f9b718;
   grid-gap: 30px;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  font-family: 'Lato';
+  font-family: "Lato";
   .notification {
     max-width: 570px;
     height: 150px;
     border-radius: 10px;
     border: 1px solid $color-1;
+    padding: 5.9% 7.3%;
+    position: relative;
+    &::before {
+      content: "\f12a";
+      font-family: "Fontawesome";
+      color: $color-5;
+      background-color: $color-7;
+      border: 7px solid $color-6;
+      border-radius: 50%;
+      padding: 3% 4.4%;
+      font-size: 24px;
+      float: left;
+      margin-right: 6%;
+    }
+    a {
+      &::after {
+        content: "\f00d";
+        font-family: "Fontawesome";
+        font-size: 14px;
+        position: absolute;
+        right: 3%;
+        top: 10%;
+        color: $color-4;
+      }
+    }
     div {
       h3 {
-          font-weight: 900;
+        font-weight: 900;
+        color: $color-2;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 1.5px;
+        word-spacing: -1px;
+        position: relative;
+        left: 0.1%;
+        margin-bottom: 2.5%;
       }
       p {
+        color: $color-3;
+        font-size: 14px;
+        line-height: 24px;
       }
     }
   }

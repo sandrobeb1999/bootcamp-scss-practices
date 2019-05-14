@@ -36,8 +36,6 @@ $color-19: #8781BD;
   .notification {
     display: flex;
     flex-direction: row;
-    max-width: 570px;
-    height: 150px;
     border-radius: 10px;
     border: 1px solid $color-1;
     padding: 7.4% 8.7%;
@@ -102,13 +100,14 @@ $color-19: #8781BD;
       height: 50px;
     }
     a {
+      position: absolute;
+      right: 3%;
+      top: 13%;
+      text-decoration: none;
       &::after {
         content: "\f00d";
         font-family: "Fontawesome";
         font-size: 14px;
-        position: absolute;
-        right: 3%;
-        top: 13%;
         color: $color-4;
       }
     }

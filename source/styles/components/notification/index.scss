@@ -1,170 +1,209 @@
-   .notification {
+.notification {
     display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-    border: 1px solid $color-1;
-    padding: 42.172px 49.578px;
     position: relative;
-    &.green {
-      &::before {
-      content: "\f00c";
-      color: $color-8;
-      background-color: $color-9;
-      border: 7px solid $color-10;
-      }
-      &.solid {
-        background-color: $color-22;
-        &::before{
-          border: 7px solid $color-10;
-          background-color: $color-22;
-          border-color: $color-10;
-        }
-        a {
-          &::after {
-            color: $color-8;
-          }
-        }
-      }
-    }
-    &.red {
-      &::before {
-        content: "\f00d";
-        color: $color-11;
-        background-color: $color-12;
-        border: 7px solid $color-13;
-      }
-      &.solid {
-        background-color: $color-23;
-        &::before{
-          background-color: $color-23;
-          border-color: $color-13;
-        }
-        a {
-          &::after {
-          color: $color-11;
-          }
-        }
-      }
-    }
-    &.blue {
-      &::before {
-       content: "\f0e7";
-       color: $color-14;
-       background-color: $color-15;
-       border: 7px solid $color-16;
-      }
-      &.solid {
-        background-color: $color-24;
-        &::before{
-          background-color: $color-24;
-          border-color: $color-16;
-        }
-        a {
-          &::after {
-          color: $color-14;
-          }
-        }
-      }
-    }
-    &.purple {
-      &::before {
-      content: "\f129";
-      color: $color-17;
-      background-color: $color-18;
-      border: 7px solid $color-19;
-      }
-      &.solid {
-        background-color: $color-25;
-        &::before{
-          background-color: $color-25;
-          border-color: $color-19;
-        }
-        a {
-          &::after {
-          color: $color-17;
-          }
-        }
-      }
-    }
-    &.large {
-      grid-column: span 2;
-      display: flex;
-      flex-direction: row;
-      max-width: 100%;
-      border: 1px solid #e2e6e7;
-      border-radius: 10px;
-      padding: 42.109px 50.297px;
-      position: relative;
-      &::before{
-        margin-right: 2.5%;
-      }
-      h3 {
-        margin-bottom: 1%;
-      }
-      a {
-        right: 1.5%;
-        top: 11%;
-        position: absolute;
-      }
-    }
-    &::before {
-      content: "\f12a";
-      font-family: "Fontawesome";
-      color: $color-5;
-      background-color: $color-7;
-      border: 7px solid $color-6;
-      border-radius: 50%;
-      font-size: 24px;
-      margin-right: 6%;
-      flex-shrink: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50px;
-      height: 50px;
-    }
-    &.solid {
-      background-color: $color-7;
-      &::before{
-        border: 7px solid $color-20;
-      }
-      p {
-        color: $color-2;
-      }
-      a {
-        &::after {
-        color: $color-21;
-        }
-      }
-    }
+    flex-direction: row;
+    padding: 42.172px 49.578px;
+    border: 1px solid $color-1;
+    border-radius: 10px;
+
     a {
-      position: absolute;
-      right: 3%;
-      top: 13%;
-      text-decoration: none;
-      &::after {
-        content: "\f00d";
-        font-family: "Fontawesome";
-        font-size: 14px;
-        color: $color-4;
-      }
+        position: absolute;
+        top: 13%;
+        right: 3%;
+        text-decoration: none;
+
+        &::after {
+            content: '\f00d';
+            color: $color-4;
+            font-family: 'Fontawesome';
+            font-size: 14px;
+        }
     }
-    div {
-      h3 {
-        font-weight: 900;
-        color: $color-2;
-        font-size: 14px;
-        line-height: 14px;
-        letter-spacing: 1.5px;
-        word-spacing: -1px;
-        position: relative;
-        left: 0.1%;
-        margin-bottom: 2.5%;
-      }
-      p {
+
+    p {
         color: $color-3;
         font-size: 14px;
         line-height: 24px;
-      }
     }
-  }
+
+    &.solid {
+        background-color: $color-7;
+
+        &::before {
+            border: 7px solid $color-20;
+        }
+
+        p {
+            color: $color-2;
+        }
+
+        a {
+
+            &::after {
+                color: $color-21;
+            }
+        }
+    }
+
+    &.green {
+
+        a {
+            position: absolute;
+            top: 11%;
+            right: 1.5%;
+        }
+
+        &::before {
+            content: '\f00c';
+            border: 7px solid $color-10;
+            background-color: $color-9;
+            color: $color-8;
+        }
+
+        &.solid {
+            background-color: $color-22;
+
+            &::before {
+                border: 7px solid $color-10;
+                border-color: $color-10;
+                background-color: $color-22;
+            }
+
+            a {
+
+                &::after {
+                    color: $color-8;
+                }
+            }
+        }
+    }
+
+    &.red {
+
+        &::before {
+            content: '\f00d';
+            border: 7px solid $color-13;
+            background-color: $color-12;
+            color: $color-11;
+        }
+
+        &.solid {
+            background-color: $color-23;
+
+            &::before {
+                border-color: $color-13;
+                background-color: $color-23;
+            }
+
+            a {
+
+                &::after {
+                    color: $color-11;
+                }
+            }
+        }
+    }
+
+    &.blue {
+
+        &::before {
+            content: '\f0e7';
+            border: 7px solid $color-16;
+            background-color: $color-15;
+            color: $color-14;
+        }
+
+        &.solid {
+            background-color: $color-24;
+
+            &::before {
+                border-color: $color-16;
+                background-color: $color-24;
+            }
+
+            a {
+
+                &::after {
+                    color: $color-14;
+                }
+            }
+        }
+    }
+
+    &.purple {
+
+        &::before {
+            content: '\f129';
+            border: 7px solid $color-19;
+            background-color: $color-18;
+            color: $color-17;
+        }
+
+        &.solid {
+            background-color: $color-25;
+
+            &::before {
+                border-color: $color-19;
+                background-color: $color-25;
+            }
+
+            a {
+
+                &::after {
+                    color: $color-17;
+                }
+            }
+        }
+    }
+
+    div {
+
+        h3 {
+            position: relative;
+            left: .1%;
+            margin-bottom: 2.5%;
+            color: $color-2;
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+            line-height: 14px;
+            word-spacing: -1px;
+        }
+    }
+
+    &.large {
+        display: flex;
+        position: relative;
+        grid-column: span 2;
+        flex-direction: row;
+        max-width: 100%;
+        padding: 42.109px 50.297px;
+        border: 1px solid $color-1;
+        border-radius: 10px;
+
+        &::before {
+            margin-right: 2.5%;
+        }
+
+        h3 {
+            margin-bottom: 1%;
+        }
+    }
+
+    &::before {
+        content: '\f12a';
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        margin-right: 6%;
+        border: 7px solid $color-6;
+        border-radius: 50%;
+        background-color: $color-7;
+        color: $color-5;
+        font-family: 'Fontawesome';
+        font-size: 24px;
+    }
+}

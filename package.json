@@ -25,6 +25,7 @@
     "stylelint-scss": "^3.6.1"
   },
   "dependencies": {
-    "lint": "^1.1.2"
+    "lint": "^1.1.2",
+    "sass-lint-auto-fix": "^0.17.0"
   }
 }

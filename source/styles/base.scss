@@ -1,15 +1,15 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
-  }
-  
-  .main {
-    margin: 100px auto 0;
-    max-width: 1170px;
+    padding: 0;
+}
+
+.main {
     display: grid;
-    grid-row-gap: 30px;
     grid-column-gap: 30px;
+    grid-row-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
-    font-family: "Lato";
-  }
+    max-width: 1170px;
+    margin: 100px auto 0;
+    font-family: 'Lato';
+}

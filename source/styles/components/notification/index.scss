@@ -15,7 +15,7 @@
         &::after {
             content: '\f00d';
             color: $color-4;
-            font-family: 'Fontawesome';
+            font-family: 'Fontawesome', sans-serif;
             font-size: 14px;
         }
     }
@@ -203,7 +203,7 @@
         border-radius: 50%;
         background-color: $color-7;
         color: $color-5;
-        font-family: 'Fontawesome';
+        font-family: 'Fontawesome', sans-serif;
         font-size: 24px;
     }
 }
